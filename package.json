@@ -1,0 +1,27 @@
+{
+  "name": "call-hashes",
+  "version": "0.1.0",
+  "description": "Compute hashes of Call objects",
+  "license": "ISC",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/call/call-hashes.git"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "call",
+    "call-hashes"
+  ],
+  "dependencies": {
+    "bignumber.js": "^4.1.0",
+    "create-hash": "^1.1.2",
+    "call-address-codec": "^0.1.0",
+    "call-binary-codec": "0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
