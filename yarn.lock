@@ -146,6 +146,34 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
+call-address-codec@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/call-address-codec/-/call-address-codec-0.1.0.tgz#072fb412ca84f9d2c5b16bdf0beafa154f3b2b96"
+  integrity sha512-JCAHfXC+7eRSMZyGiEYHbbOC0UdFOYRG4beevRqQtySjVPSARr4B4La/cWqFTTYIuyWoWwy7OnDAWdt/4o7+0g==
+  dependencies:
+    call-x-address-codec "^0.1.0"
+    hash.js "^1.0.3"
+
+call-binary-codec@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/call-binary-codec/-/call-binary-codec-0.1.0.tgz#61bdd920011c25ef929d14699a3fe8dcab00cde6"
+  integrity sha512-Cwua/iampjlrKpwpnFDc6igVRpDjwwuVjRnTVVNq3oxb+L4EGKf01MuvL5USMRqxyRb88EW+0L+RJcTE6HoeDA==
+  dependencies:
+    babel-runtime "^6.6.1"
+    bn.js "^4.11.3"
+    call-address-codec "^0.1.0"
+    create-hash "^1.1.2"
+    decimal.js "^5.0.8"
+    inherits "^2.0.1"
+    lodash "^4.12.0"
+
+call-x-address-codec@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/call-x-address-codec/-/call-x-address-codec-0.1.0.tgz#03e8d625d4a90be14044e97cfec8813a71d6aed1"
+  integrity sha512-kOibVSy9s+89waHSFP0Jp3hg2m4JTsiVzGJ/PkzdsJcSdRmneQrC+IXsx51ztwYUTbH0OleEQNQg3x6jakJUCg==
+  dependencies:
+    base-x "^1.0.1"
+
 camelcase@^5.0.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.2.0.tgz#e7522abda5ed94cc0489e1b8466610e88404cf45"
@@ -841,9 +869,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.12.0, lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@2.2.0:
   version "2.2.0"
@@ -1218,27 +1246,6 @@ ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-call-address-codec@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/call-address-codec/-/call-address-codec-2.0.1.tgz#eddbe3a7960d2e02c5c1c74fb9a9fa0d2dfb6571"
-  integrity sha1-7dvjp5YNLgLFwcdPuan6DS37ZXE=
-  dependencies:
-    hash.js "^1.0.3"
-    x-address-codec "^0.7.0"
-
-call-binary-codec@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/call-binary-codec/-/call-binary-codec-0.2.1.tgz#f343da758a64f3aceb4164b8a98fbc153b088c14"
-  integrity sha512-R1+equWtaJs505/G2NRvxKJVlMkZMqo4fiE6eBXi1c2IvL7dDRZPlb8JHdSgD6eT/Qo5TkovuUf3qmRz5dinNw==
-  dependencies:
-    babel-runtime "^6.6.1"
-    bn.js "^4.11.3"
-    create-hash "^1.1.2"
-    decimal.js "^5.0.8"
-    inherits "^2.0.1"
-    lodash "^4.12.0"
-    call-address-codec "^2.0.1"
-
 safe-buffer@^5.0.1, safe-buffer@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
@@ -1516,13 +1523,6 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-
-x-address-codec@^0.7.0:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/x-address-codec/-/x-address-codec-0.7.2.tgz#2a2f7bb00278520bd13733a7959a05443d6802e0"
-  integrity sha1-Ki97sAJ4UgvRNzOnlZoFRD1oAuA=
-  dependencies:
-    base-x "^1.0.1"
 
 "y18n@^3.2.1 || ^4.0.0":
   version "4.0.0"
